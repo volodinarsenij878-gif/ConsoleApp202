@@ -10,11 +10,20 @@
     {
         static void Main(string[] args)
         {
-            {
-                Console.WriteLine("=== ДРЕВНЕРУССКАЯ ЗАСТАВА: БОГАТЫРСКИЙ ДОЗОР ===\n");
+            string[] equipment = new string[5];
+            equipment[0] = "Булатный меч";
+            equipment[1] = "Кованый щит";
+            equipment[2] = "Колчан калёных стрел";
+            equipment[3] = "Горбушка хлеба";
+            equipment[4] = "Шёлковый шатёр";
 
-                // 1. Объявить строковый массив богатырского снаряжения на 5 слотов
-                string[] equipment = { "Булатный меч", "Кованый щит", "Колчан каленых стрел", "Горбушка хлеба", "Шелковый шатер" };
+            // Вывод перечня снаряжения через цикл foreach
+            Console.WriteLine("Снаряжение богатырского дозора:");
+            foreach (var item in equipment)
+            {
+                Console.WriteLine("- " + item);
             }
+            Console.WriteLine();
         }
-        }
+    }
+    }
